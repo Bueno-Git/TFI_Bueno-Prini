@@ -1,0 +1,7 @@
+--Colores principales--
+#39C6D6 (Azul Miku)
+#8AE5DA (Celeste complementario)
+#F7FAF7 (Blanco apenas oscuro)
+#676F73 (Gris medio)
+#1C1F22 (Gris muy oscuro)
+#FF77A8 (Rosa)
