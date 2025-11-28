@@ -9,9 +9,6 @@
     --font-tech: 'Orbitron', sans-serif;
 }
 
-<<<<<<< HEAD
-/* GLOBAL */
-=======
 /* Animaciones globales */
 @keyframes fadeIn {
     to {
@@ -19,7 +16,6 @@
         transform: translateY(0);
     }
 }
->>>>>>> f0d928e8f877aa4878b299646b07b0bed0a1b743
 
 /* Estilos globales */
 body {
@@ -27,26 +23,12 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-<<<<<<< HEAD
   font-family: var(--font-main);
   background-color: var(--bg);
-=======
-    font-family: var(--font-main);
-    background-color: var(--bg);
->>>>>>> f0d928e8f877aa4878b299646b07b0bed0a1b743
 }
 
 /* Header global */
 .header {
-<<<<<<< HEAD
-  width: 100%;
-  background: var(--Miku-Azul);
-  border-bottom: 3px solid var(--Gris);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-=======
     width: 100%;
     background: var(--Miku-Azul);
     border-bottom: 3px solid var(--Gris);
@@ -54,7 +36,6 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
->>>>>>> f0d928e8f877aa4878b299646b07b0bed0a1b743
 }
 
 .header__container {
@@ -184,14 +165,6 @@ body {
   max-width: 300px;
 }
 
-<<<<<<< HEAD
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Imagen-Texto global */
 .info {
   padding: 20px 0;
@@ -294,13 +267,8 @@ body {
   background-size: 60%;
 }
 
-
-
 /* INDEX */
 
-=======
-/* INDEX */
->>>>>>> f0d928e8f877aa4878b299646b07b0bed0a1b743
 /* Bloque 1 */
 .design {
   padding: 80px 0;
@@ -405,7 +373,6 @@ body {
   line-height: 1.45;
 }
 
-<<<<<<< HEAD
 /* HISTORIA */
 
 /* Bloque 4 */
@@ -506,107 +473,10 @@ body {
   font-size: 0.9rem;
   text-align: left;
   margin: 0;
-=======
-/* Bloque 3 */
-
-.songs {
-  padding: 90px 0;
-  text-align: center;
-}
-
-.songs__title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.songs__subtitle {
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 40px;
-}
-
-/* Tamaño del carrusel */
-.songs__carousel {
-  width: 70%;
-  margin: 0 auto;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
-}
-
-/* Imágenes */
-.carousel-img {
-  height: 420px;
-  object-fit: cover;
-}
-
-/* Overlay personalizado */
-.carousel-caption-custom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 15px 0;
-  background: rgba(30, 30, 30, 0.5);
-  backdrop-filter: blur(4px);
-  color: #fff;
-}
-
-.carousel-caption-custom h5 {
-  font-size: 1.4rem;
-  margin: 0;
-}
-
-.carousel-caption-custom p {
-  font-size: 0.95rem;
-  margin: 0;
-  opacity: 0.9;
-}
-
-/* Quitamos el subrayado del link */
-.carousel-item {
-  text-decoration: none;
-}
-
-/* HISTORIA */
-/* Bloque 1 */
-.origin {
-  padding: 20px 0;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.origin__title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-  text-align: center;
-  color: var(--Negro);
-}
-
-.origin__content {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  margin-bottom: 60px;
-}
-
-.origin__img {
-  width: 30%;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
-}
-
-.origin__text {
-  width: 55%;
-  font-size: 1.1rem;
->>>>>>> f0d928e8f877aa4878b299646b07b0bed0a1b743
   line-height: 1.6;
   color: var(--Gris);
 }
 
-<<<<<<< HEAD
 .voice:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.10);
@@ -884,58 +754,4 @@ body {
 }
 .timeline__content--right {
   margin-left: 18px;
-=======
-/* Bloque 2 */
-.timeline {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.timeline__title {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-}
-
-.timeline__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 20px;
-}
-
-/* Bloque 3 */
-.timeline__container::before {
-    content: "";
-    position: absolute;
-    top: 33px;              /* altura de los puntos */
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--Miku-Azul);
-}
-
-/* Cada punto */
-.timeline__dot {
-    width: 22px;
-    height: 22px;
-    background: white;
-    border: 4px solid var(--Celeste);
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    margin: 0 auto 15px auto;
-}
-
-/* Texto */
-.timeline__item {
-    width: 180px;
-}
-
-.timeline__year {
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-    color: var(--Miku-Azul);
->>>>>>> f0d928e8f877aa4878b299646b07b0bed0a1b743
 }
