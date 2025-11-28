@@ -5,32 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hatsune Miku</title>
   <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<<<<<<< HEAD
-=======
-<header class="header">
-    <div class="header__container">
-        <a href="../index.html" class="logo">
-            <span class="logo__number">01</span> Hatsune Miku
-        </a>
-
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link nav__link">Inicio</a></li>
-                <li class="nav__item"><a href="historia.html" class="nav__link">Historia</a></li>
-                <li class="nav__item"><a href="musica.html" class="nav__link">Música</a></li>
-                <li class="nav__item"><a href="tecnologia.html" class="nav__link">Tecnología</a></li>
-                <li class="nav__item"><a href="impacto.html" class="nav__link">Impacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
->>>>>>> f0d928e8f877aa4878b299646b07b0bed0a1b743
 
 <header class="header">
     <div class="header__container">
@@ -53,16 +32,211 @@
 
 <section class="hero">
     <div class="hero__content">
-        <h1 class="hero__title">Hatsune Miku</h1>
-        <p class="hero__subtitle">La ícono virtual que revolucionó la música.</p>
-        <a href="musica.html" class="hero__button">Descubrir más</a>
+        <h1 class="hero__title">Impacto global y comunidad</h1>
+        <p class="hero__subtitle">Cómo un software se transformó en un fenómeno cultural mundial.</p>
+        <a href="../index.html" class="hero__button">Volver al inicio</a>
     </div>
 
-    <div class="hero__image-wrapper">
-        <img src="assets/index_hero.webp" alt="Hatsune Miku" class="hero__image">
+    <div class="hero__image-wrapper" id="small">
+        <img src="../assets/impacto_hero.png" alt="Hatsune Miku" class="hero__image">
     </div>
 </section>
 
+
+<section class="impact-hero">
+  <div class="impact-hero__content">
+    <h2 class="impact-hero__title">Miku en la cultura pop</h2>
+    <p class="impact-hero__text">
+      Hatsune Miku se convirtió en un ícono global que superó su rol inicial
+      como software musical. Aparece en conciertos con hologramas, colaboraciones
+      con marcas, series, videojuegos y miles de producciones creadas por la comunidad.
+      Su presencia no solo representa tecnología, sino una nueva forma de cultura
+      participativa donde fans y creadores moldean juntos su identidad.
+    </p>
+  </div>
+
+  <div class="impact-hero__image-container">
+    <img src="../assets/impacto_pop.jpg" alt="Hatsune Miku Cultura Pop">
+  </div>
+</section>
+
+
+<section class="comunidad">
+  <h2 class="comunidad__title">¿Cómo participa la comunidad?</h2>
+
+  <div class="comunidad__cards">
+
+    <!-- TARJETA 1 -->
+    <div class="comunidad__card">
+      <img src="../assets/impacto_comunidad-creadores.avif" alt="Creadores" class="comunidad__img">
+      <h3>Creadores de música</h3>
+      <p>La comunidad produce canciones, remixes y covers usando diferentes motores de voz.</p>
+    </div>
+
+    <!-- TARJETA 2 -->
+    <div class="comunidad__card">
+      <img src="../assets/impacto_comunidad-ilustradores.jpeg" alt="Ilustradores" class="comunidad__img">
+      <h3>Ilustradores y modeladores</h3>
+      <p>Muchos artistas diseñan ilustraciones, modelos 3D y portadas para proyectos colaborativos.</p>
+    </div>
+
+    <!-- TARJETA 3 -->
+    <div class="comunidad__card">
+      <img src="../assets/impacto_comunidad-eventos.jpg" alt="Eventos" class="comunidad__img">
+      <h3>Eventos y proyectos</h3>
+      <p>Fanáticos organizan conciertos, exposiciones y proyectos globales de participación colectiva.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="slider" id="songs">
+  <h2 class="slider__title">Eventos y conciertos</h2>
+
+  <div id="mikuCarousel" class="carousel slide slider__carousel" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <a href="https://mikuexpo.com" target="_blank" class="carousel-item active">
+        <img src="../assets/impacto_conciertos-mikuexpo.jpg" class="d-block w-100 carousel-img" alt="Miku Expo">
+        <div class="carousel-caption-custom">
+          <h5>Miku Expo</h5>
+        </div>
+      </a>
+
+      <a href="https://magicalmirai.com/2025/index_en.html" target="_blank" class="carousel-item">
+        <img src="../assets/impacto_conciertos-mirai.jpg" class="d-block w-100 carousel-img" alt="Magical Mirai">
+        <div class="carousel-caption-custom">
+          <h5>Magical Mirai</h5>
+        </div>
+      </a>
+
+      <a href="https://www.sso.or.jp/concerts/2025/02/2025-10th-anniversary/e" target="_blank" class="carousel-item">
+        <img src="../assets/impacto_conciertos-symphony.png" class="d-block w-100 carousel-img" alt="Miku Symphony">
+        <div class="carousel-caption-custom">
+          <h5>Miku Symphony</h5>
+        </div>
+      </a>
+
+
+      <a href="https://youtu.be/VyaONSOSEg8" target="_blank" class="carousel-item">
+        <img src="../assets/impacto_conciertos-holograma.jpg" class="d-block w-100 carousel-img" alt="Presentación con hologramas">
+        <div class="carousel-caption-custom">
+          <h5>Presentación con hologramas</h5>
+        </div>
+      </a>
+
+
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#mikuCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mikuCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+
+<section class="timeline">
+  <h2 class="timeline__title">Impacto global</h2>
+
+  <div class="timeline__container">
+
+    <!-- 1 — Right -->
+    <div class="timeline__row">
+      <div class="timeline__content timeline__content--right">
+        <span class="timeline__year">2007</span>
+        <h3 class="timeline__item-title">Primeras canciones hechas por fans</h3>
+        <p class="timeline__text">Miku empieza a difundirse gracias a compositores amateurs que suben sus temas a Nico Nico Douga, dando origen a una comunidad creativa masiva.</p>
+        <img src="../assets/impacto_global-2007.jpg" alt="Vocaloid 1" class="timeline__point-img" id="big">
+      </div>
+
+      <div class="timeline__center">
+        <div class="timeline__dot">
+        </div>
+      </div>
+
+      <div class="timeline__spacer"></div>
+    </div>
+
+    <!-- 2 — Left -->
+    <div class="timeline__row">
+      <div class="timeline__spacer"></div>
+
+      <div class="timeline__center">
+        <div class="timeline__dot">
+        </div>
+      </div>
+
+      <div class="timeline__content timeline__content--left">
+        <span class="timeline__year">2010-2012</span>
+        <h3 class="timeline__item-title">Primeros conciertos holográficos</h3>
+        <p class="timeline__text">La tecnología de proyección convierte a Miku en una performer en vivo, mezclando música digital con espectáculos visuales que sorprenden al público mundial.</p>
+        <img src="../assets/impacto_global-2010-12.jpg" alt="Vocaloid 2 / Miku" class="timeline__point-img">
+      </div>
+    </div>
+
+    <!-- 3 — Right -->
+    <div class="timeline__row">
+      <div class="timeline__content timeline__content--right">
+        <span class="timeline__year">2014-2016</span>
+        <h3 class="timeline__item-title">Explota internacionalmente (Miku Expo)</h3>
+        <p class="timeline__text">Las giras globales consolidan su presencia fuera de Japón, conectando a fans de distintos países y mostrando el potencial cultural del fenómeno Vocaloid.</p>
+        <img src="../assets/impacto_global-2014-16.jpg" alt="Vocaloid 3" class="timeline__point-img">
+      </div>
+
+      <div class="timeline__center">
+        <div class="timeline__dot">
+        </div>
+      </div>
+
+      <div class="timeline__spacer"></div>
+    </div>
+
+    <!-- 4 — Left -->
+    <div class="timeline__row">
+      <div class="timeline__spacer"></div>
+
+      <div class="timeline__center">
+        <div class="timeline__dot">
+        </div>
+      </div>
+
+      <div class="timeline__content timeline__content--left">
+        <span class="timeline__year">2019-2023</span>
+        <h3 class="timeline__item-title">Comunidad madura: covers IA, remakes, remixes</h3>
+        <p class="timeline__text">Los productores adoptan nuevas herramientas digitales y técnicas de mezcla modernas, generando reinterpretaciones más pulidas y variados estilos.</p>
+        <img src="../assets/impacto_global-2019-23.jpg" alt="Vocaloid 4" class="timeline__point-img">
+      </div>
+    </div>
+
+    <!-- 5 — Right -->
+    <div class="timeline__row">
+      <div class="timeline__content timeline__content--right">
+        <span class="timeline__year">2024-actualidad</span>
+        <h3 class="timeline__item-title">Nuevas tecnologías de voz / colaboraciones globales</h3>
+        <p class="timeline__text">El desarrollo de motores avanzados y proyectos con artistas internacionales renueva el interés por Miku y expande su influencia más allá de la música.</p>
+        <img src="../assets/impacto_global-2024.webp" alt="Crypton" class="timeline__point-img">
+      </div>
+
+      <div class="timeline__center">
+        <div class="timeline__dot">
+        </div>
+      </div>
+
+      <div class="timeline__spacer"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
