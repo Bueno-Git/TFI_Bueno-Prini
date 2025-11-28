@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hatsune Miku</title>
+  <title>Historia de Hatsune Miku</title>
+  <meta name="description" content="Conoce el origen de Hatsune Miku, su creación por Crypton Future Media en 2007 y cómo se transformó de un software de voz en un fenómeno mundial.">
+  <meta name="keywords" content="origen Hatsune Miku, creación Vocaloid, Saki Fujita, evolución Vocaloid, cronología Miku, primera Vocaloid, Crypton Future Media.">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
@@ -16,9 +18,15 @@
             <span class="logo__number">01</span> Hatsune Miku
         </a>
 
-        <nav class="nav">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav" id="main-navigation">
             <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
                 <li class="nav__item"><a href="historia.html" class="nav__link">Historia</a></li>
                 <li class="nav__item"><a href="musica.html" class="nav__link">Música</a></li>
                 <li class="nav__item"><a href="tecnologia.html" class="nav__link">Tecnología</a></li>
@@ -33,7 +41,7 @@
     <div class="hero__content">
         <h1 class="hero__title">Origen</h1>
         <p class="hero__subtitle">El camino de voz sintética a fenómeno cultural.</p>
-        <a href="tecnologia.html" class="hero__button">Descubre su funcionamiento.</a>
+        <a href="tecnologia.html" class="hero__button">Descubre su funcionamiento ➤</a>
     </div>
 
     <div class="hero__image-wrapper">
@@ -139,6 +147,78 @@
     </div>
 </section>
 
+
+<section class="cta">
+  <h2>¿Interesado en más?</h2>
+  <p>Revisa el sitio oficial.</p>
+  <a href="https://mikuexpo.com/" class="boton-azul">Ver más ➤</a>
+</section>
+
+
+<footer>
+  <div class="footer-contenido">
+    <div class="footer-logo_columna">
+      <a href="../index.html">
+        <img src="../assets/favicon.png" alt="Logo Miku" class="footer-logo">
+      </a>
+      <p class="footer-copy">© 2025 Hatsune Miku</p>
+    </div>
+
+    <div class="footer-columna">
+      <h4>Secciones</h4>
+      <nav class="footer-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="musica.html">Musica</a>
+        <a href="tecnologia.html">Tecnología</a>
+        <a href="impacto.html">Impacto</a>
+      </nav>
+    </div>
+
+    <div class="footer-columna">
+      <h4>Contacto</h4>
+      <p><a href="https://mikuexpo.com/" target="_blank">Página oficial</a></p>
+      <p><a href="https://mikumerch.com/" target="_blank">Tienda oficial</a></p>
+      <p><a href="https://www.crypton.co.jp/cfm/inquiry-aboutus_en" target="_blank">Formulario de contacto oficial</a></p>
+
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/cfm_miku_official/?hl=es" target="_blank" aria-label="Instagram">
+          <img src="../assets/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/HatsuneMikuOfficialPage/?locale=es_LA" target="_blank" aria-label="Facebook">
+          <img src="../assets/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://x.com/cfm_miku_en" target="_blank" aria-label="X (Twitter)">
+          <img src="../assets/gorjeo.png" alt="X (Twitter)">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('.header');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', function() {
+            header.classList.toggle('open');
+            
+            const isExpanded = this.getAttribute('aria-expanded') === 'true' || false;
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        const navLinks = nav.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                header.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    });
+</script>
 
 
 </body>

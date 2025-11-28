@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hatsune Miku</title>
+  <title>Música de Hatsune Miku</title>
+  <meta name="description" content="Explora las canciones más populares de Miku. Un catálogo infinito creado por fans y productores. Descubre los mejores álbumes y las giras de Miku Expo.">
+  <meta name="keywords" content="música Hatsune Miku, canciones Vocaloid, productores Vocaloid, Miku Expo, conciertos Miku, álbumes Miku, J-Pop Vocaloid.">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -17,9 +19,15 @@
             <span class="logo__number">01</span> Hatsune Miku
         </a>
 
-        <nav class="nav">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav" id="main-navigation">
             <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
                 <li class="nav__item"><a href="historia.html" class="nav__link">Historia</a></li>
                 <li class="nav__item"><a href="musica.html" class="nav__link">Música</a></li>
                 <li class="nav__item"><a href="tecnologia.html" class="nav__link">Tecnología</a></li>
@@ -34,7 +42,7 @@
     <div class="hero__content">
         <h1 class="hero__title">Música y Sonido</h1>
         <p class="hero__subtitle">La voz sintética que inspiró miles de canciones</p>
-        <a href="historia.html" class="hero__button">Descubrir su origen</a>
+        <a href="historia.html" class="hero__button">Descubrir su origen ➤</a>
     </div>
 
     <div class="hero__image-wrapper">
@@ -130,34 +138,56 @@
 
     <div class="carousel-inner">
 
-      <a href="https://youtu.be/pdy4jF2YbCs" target="_blank" class="carousel-item active">
-        <img src="../assets/index_cancion-rg.jpg" class="d-block w-100 carousel-img" alt="Rolling Girl">
+      <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vocaloid.fandom.com/es/wiki/EXIT_TUNES_PRESENTS_Vocalolegend_feat._Hatsune_Miku&ved=2ahUKEwj0otLn1JSRAxU2DLkGHflQCAgQFnoECCAQAQ&usg=AOvVaw0guAg8AVKdZgFLZX3IY0kM" target="_blank" class="carousel-item">
+        <img src="../assets/musica_concierto-vl.jpg" class="d-block w-100 carousel-img" alt="Vocalolegend">
         <div class="carousel-caption-custom">
-          <h5>Rolling Girl</h5>
-          <p>wowaka</p>
+          <h5>Vocalolegend</h5>
+          <p>2010</p>
         </div>
       </a>
 
-      <a href="https://youtu.be/qx1fQgvCk4M" target="_blank" class="carousel-item">
-        <img src="../assets/index_cancion-wim.jpg" class="d-block w-100 carousel-img" alt="World is Mine">
+      <a href="https://miku.sega.com/megamixplus/index.html" target="_blank" class="carousel-item active">
+        <img src="../assets/musica_concierto-pd.webp" class="d-block w-100 carousel-img" alt="Proyect Diva">
         <div class="carousel-caption-custom">
-          <h5>World is Mine</h5>
-          <p>ryo (supercell)</p>
+          <h5>Proyect Diva</h5>
+          <p>2009</p>
         </div>
       </a>
 
-      <a href="https://youtu.be/VRVcfvakg6s" target="_blank" class="carousel-item">
-        <img src="../assets/index_cancion-tyw.webp" class="d-block w-100 carousel-img" alt="Tell Your World">
+      <a href="https://vocaloid.fandom.com/wiki/Re:Start" target="_blank" class="carousel-item">
+        <img src="../assets/musica_concierto-re.jpg" class="d-block w-100 carousel-img" alt="Re:Start">
         <div class="carousel-caption-custom">
-          <h5>Tell Your World</h5>
-          <p>livetune</p>
+          <h5>Re:Start</h5>
+          <p>2017</p>
         </div>
       </a>
 
+      <a href="https://vocaloid.fandom.com/wiki/Hatsune_Miku_Magical_Mirai_2018" target="_blank" class="carousel-item">
+        <img src="../assets/musica_concierto-mirai18.jpg" class="d-block w-100 carousel-img" alt="Magical Mirai">
+        <div class="carousel-caption-custom">
+          <h5>Magical Mirai</h5>
+          <p>2018</p>
+        </div>
+      </a>
 
+      <a href="https://vocaloid.fandom.com/wiki/Hatsune_Miku_Magical_Mirai_2020" target="_blank" class="carousel-item">
+        <img src="../assets/musica_concierto-mirai20.webp" class="d-block w-100 carousel-img" alt="Magical Mirai">
+        <div class="carousel-caption-custom">
+          <h5>Magical Mirai</h5>
+          <p>2020</p>
+        </div>
+      </a>
 
+      <a href="https://digitalstars.club/hmds25/index_en.html" target="_blank" class="carousel-item">
+        <img src="../assets/musica_concierto-ds.jpg" class="d-block w-100 carousel-img" alt="Digital Stars">
+        <div class="carousel-caption-custom">
+          <h5>Digital Stars</h5>
+          <p>2025</p>
+        </div>
+      </a>
 
     </div>
+
 
     <button class="carousel-control-prev" type="button" data-bs-target="#mikuCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
@@ -168,6 +198,79 @@
 
   </div>
 </section>
+
+
+<section class="cta">
+  <h2>¿Interesado en más?</h2>
+  <p>Descubre la comunidad y fandom de Miku.</p>
+  <a href="impacto.html" class="boton-azul">Ver más ➤</a>
+</section>
+
+
+<footer>
+  <div class="footer-contenido">
+    <div class="footer-logo_columna">
+      <a href="../index.html">
+        <img src="../assets/favicon.png" alt="Logo Miku" class="footer-logo">
+      </a>
+      <p class="footer-copy">© 2025 Hatsune Miku</p>
+    </div>
+
+    <div class="footer-columna">
+      <h4>Secciones</h4>
+      <nav class="footer-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="musica.html">Musica</a>
+        <a href="tecnologia.html">Tecnología</a>
+        <a href="impacto.html">Impacto</a>
+      </nav>
+    </div>
+
+    <div class="footer-columna">
+      <h4>Contacto</h4>
+      <p><a href="https://mikuexpo.com/" target="_blank">Página oficial</a></p>
+      <p><a href="https://mikumerch.com/" target="_blank">Tienda oficial</a></p>
+      <p><a href="https://www.crypton.co.jp/cfm/inquiry-aboutus_en" target="_blank">Formulario de contacto oficial</a></p>
+
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/cfm_miku_official/?hl=es" target="_blank" aria-label="Instagram">
+          <img src="../assets/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/HatsuneMikuOfficialPage/?locale=es_LA" target="_blank" aria-label="Facebook">
+          <img src="../assets/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://x.com/cfm_miku_en" target="_blank" aria-label="X (Twitter)">
+          <img src="../assets/gorjeo.png" alt="X (Twitter)">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('.header');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', function() {
+            header.classList.toggle('open');
+            
+            const isExpanded = this.getAttribute('aria-expanded') === 'true' || false;
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        const navLinks = nav.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                header.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    });
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
